@@ -1,0 +1,25 @@
+=== OAI RFsim Reference Setup (Working) ===
+Date: 2025-11-21
+
+RAN Components:
+  gNB: oaisoftwarealliance/oai-gnb:develop
+  UE:  oaisoftwarealliance/oai-nr-ue:develop
+
+5G Core Components (v2.1.10):
+  AMF:   oaisoftwarealliance/oai-amf:v2.1.10
+  SMF:   oaisoftwarealliance/oai-smf:v2.1.10
+  UPF:   oaisoftwarealliance/oai-upf:v2.1.10
+  NRF:   oaisoftwarealliance/oai-nrf:v2.1.10
+  UDR:   oaisoftwarealliance/oai-udr:v2.1.10
+  UDM:   oaisoftwarealliance/oai-udm:v2.1.10
+  AUSF:  oaisoftwarealliance/oai-ausf:v2.1.10
+
+Database:
+  MySQL: mysql:8.0
+
+Traffic Generator:
+  trf-gen-cn5g: oaisoftwarealliance/trf-gen-cn5g:focal
+
+Setup Location: ~/oai-rfsim-ref/
+Compose File: docker-compose.yaml
+Status: ✅ Verified Working (2025-11-21 23:35 CET)
