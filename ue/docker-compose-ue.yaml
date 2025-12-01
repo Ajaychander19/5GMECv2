@@ -13,8 +13,8 @@ services:
     environment:
       USE_ADDITIONAL_OPTIONS: -E --rfsim -r 106 --numerology 1 --uicc0.imsi 208990100001100 -C 3319680000 --rfsimulator.serveraddr 192.168.71.140 --log_config.global_log_options level,nocolor,time
     networks:
-      oai-net:
-        ipv4_address: 192.168.71.150
+      - oai-public-net
+      oai-traffic-net:
     devices:
        - /dev/net/tun:/dev/net/tun
     volumes:
@@ -27,6 +27,5 @@ services:
       retries: 5
 
 networks:
-  oai-net:
-    external: true
+  oai-public-net:
     name: oai-public-net
