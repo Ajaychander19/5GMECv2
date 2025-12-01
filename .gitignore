@@ -15,3 +15,22 @@ Thumbs.db
 # Backups
 *.bak
 *~
+
+# OAI and FlexRIC source (too large, use official repos)
+oai-rfsim-ref/
+flexric/
+
+# Build outputs
+build/
+bin/
+*.o
+*.so
+*.a
+
+# Docker volumes
+volumes/
+data/
+
+# Large log files
+*.log.*
+logs/
